@@ -1,3 +1,14 @@
+<?php
+include("koneksi.php");
+
+$sql = "SELECT * FROM videos";
+$result = $conn->query($sql);
+
+if (!$result) {
+    die("Query failed: " . $conn->error);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +41,22 @@
     <div class="sidebar">
       <h4>Latest Videos</h4>
       <div class="video-list">
+      <?php
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo '<div class="video-item" onclick="playVideo(\'' . $row["url"] . '\', \'' . $row["title"] . '\')">';
+                echo '<img src="' . $row["thumbnail"] . '" alt="' . $row["title"] . '">';
+                echo '<div class="video-info">';
+                echo '<p>' . $row["title"] . '</p>';
+                echo '<span>' . $row["duration"] . '</span>';
+                echo '</div></div>';
+            }
+        } else {
+            echo "No videos found.";
+        }
+        $conn->close();
+        ?>
+
     </div>
     </div>
 </div>
