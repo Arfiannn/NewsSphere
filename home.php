@@ -13,6 +13,7 @@
   </div>
   <div class="options-container"></div>
   <div class="container"></div>
+  <script type="module" src="script.js"></script>
   <script>
     document.getElementById("logoutButton").addEventListener("click", function() {
     window.location.href = "index.php";

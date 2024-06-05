@@ -33,7 +33,6 @@
     });
 
     function redirectTo(page) {
-      // Here you can handle any additional logic before redirecting
       window.location.href = page;
     }
 

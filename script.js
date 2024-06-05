@@ -1,8 +1,8 @@
-import { apiKey } from './api-key.js';
-
+// script untuk menghubung api ke halaman home
+const apiKey = '3321af01b68c4057bd7c5eaa451f597c';
 const container = document.querySelector('.container');
 const optionsContainer = document.querySelector('.options-container');
-const country = 'us';
+const country = 'jp';
 const options = ['general', 'entertainment', 'health', 'science', 'sports', 'technology'];
 
 let requestURL;
