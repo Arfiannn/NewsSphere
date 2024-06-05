@@ -9,6 +9,7 @@
 <body>
   <div class="heading-container">
     <h4>News Sphere</h4>
+    <button class="logout-button" id="logoutButton">Logout</button>
   </div>
   <div class="options-container"></div>
   <div class="container"></div>
