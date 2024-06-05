@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -57,7 +57,7 @@ h2 {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #cb202d;
+  background-color: #2f6492;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -75,7 +75,7 @@ p {
 }
 
 a {
-  color: #cb202d;
+  background-color: #2f6492;
   text-decoration: none;
   font-weight: 600;
 }
