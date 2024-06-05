@@ -22,7 +22,7 @@ if (!$result) {
 <nav class="navbar">
     <ul class="navbar-nav">
         <li class="nav-item">
-        <a href="">Logout</a>
+        <a href="index.php">Logout</a>
         </li>
     </ul>
     </div>
